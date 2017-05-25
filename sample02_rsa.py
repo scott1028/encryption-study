@@ -66,7 +66,7 @@ MSG2 = 123
 # Formula: c = (m ** e) % n
 # Formula: m = (c ** d) % n
 
-# 重要概念: A-Key B-Key 不等於 Public-Key(通常只有 n, e) & Private-Key(通常有 n, e, d, p, q, u)
+# 重要概念: RSA 中 A-Key & B-Key 不代表 Public-Key(通常只有 n, e) & Private-Key(通常有 n, e, d, p, q, u)
 
 c = encrypt(MSG2, rsa.e, rsa.n)
 m = decrypt(c, rsa.d, rsa.n)
