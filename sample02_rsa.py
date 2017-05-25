@@ -8,7 +8,7 @@ from Crypto.Cipher import PKCS1_OAEP
 
 # 偽隨機數生成器
 random_generator = Random.new().read
-# rsa算法生成實例
+# rsa算法生成實例, 如果要實作 Wik 上的演算法要靠這邊取得 'n', 'e', 'd', 'p', 'q', 'u' 否則等產生 Private & Public Key 再取會缺少部份數值.
 rsa = RSA.generate(1024, random_generator)
 
 # master的秘鑰對的生成
