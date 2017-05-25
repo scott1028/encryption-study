@@ -105,5 +105,6 @@ message = 1028
 c = pow( message, d, n)
 p = pow( c,  e, n )
 
+print d, e, n
 print '測試驗證 使用 "私鑰" 加密 "公鑰" 解密 ->'
 print '>> 輸入:', message, '由私鑰加密產生密文: ', c, '由密文用公鑰解密:', p
