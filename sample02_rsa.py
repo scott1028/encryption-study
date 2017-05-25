@@ -39,4 +39,26 @@ cipher = PKCS1_OAEP.new(key2)
 msg = cipher.decrypt(cipher_txt)
 print msg
 
-import pdb; pdb.set_trace()
+
+# Sample2
+# According Ref: https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29#Decryption
+# >> (Pdb) encrypt(123, 17, 3233)
+# >>  855
+# >> (Pdb) decrypt(855, 413, 3233)
+# >>  123
+
+def encrypt(m, e, n):
+	c = pow(m, e, n)
+	return c
+
+def decrypt(c, d, n):
+	m = pow(c, d, n)
+	return m
+
+MSG2 = 123
+# 由先前的 RSA.generate(1024, random_generator) 取得 'n', 'e', 'd', 'p', 'q', 'u' 值
+# Formula: c = (m ** e) % n
+# Formula: m = (c ** d) % n
+c = encrypt(MSG2, rsa.e, rsa.n)
+m = decrypt(c, rsa.d, rsa.n)
+print MSG2 == m, MSG2, m
