@@ -15,4 +15,4 @@ B-Key encrypts message to cipher -> A-Key decrypts cipher to message.
 P.S 但大部份實作 Private Key 不會作為加密使用!
 ```
 
-- ![Alt text](https://raw.githubusercontent.com/scott1028/master/sample02_rsa.png "sample02_rsa.png")
+- ![Alt text](https://raw.githubusercontent.com/scott1028/encryption-study/master/sample02_rsa.png "sample02_rsa.png")
