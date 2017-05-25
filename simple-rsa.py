@@ -94,8 +94,10 @@ else:
 print "----------- End -------------"
 
 # Ref: https://zh.wikipedia.org/wiki/RSA%E5%8A%A0%E5%AF%86%E6%BC%94%E7%AE%97%E6%B3%95
+# Ref: http://www.kaiching.org/2011/02/python-pow.html
 # 測試驗證 使用 "私鑰" 加密 "公鑰" 解密
 # 他使用起先與Alice約好的格式將 m 轉換為一個小於 N，且與 N 互質的整數 n，比如他可以將每一個字轉換為這個字的 Unicode 碼，然後將這些數字連在一起組成一個數字。
+# Python: pow(x, y[, z]) -> 回傳 xy 之值，或是 xy % z 之值
 
 print
 
