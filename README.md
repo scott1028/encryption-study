@@ -1,5 +1,6 @@
 # 非對稱式加密運作方式
 
+- 必看 Ref: https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29
 - Ref: https://zh.wikipedia.org/wiki/RSA%E5%8A%A0%E5%AF%86%E6%BC%94%E7%AE%97%E6%B3%95
 - Ref: https://pythonhosted.org/pycrypto/
 
