@@ -96,7 +96,12 @@ print "----------- End -------------"
 # Ref: https://zh.wikipedia.org/wiki/RSA%E5%8A%A0%E5%AF%86%E6%BC%94%E7%AE%97%E6%B3%95
 # 測試驗證 使用 "私鑰" 加密 "公鑰" 解密
 # 他使用起先與Alice約好的格式將 m 轉換為一個小於 N，且與 N 互質的整數 n，比如他可以將每一個字轉換為這個字的 Unicode 碼，然後將這些數字連在一起組成一個數字。
-c = pow( plain, d, n)
+
+print
+
+message = 1028
+c = pow( message, d, n)
 p = pow( c,  e, n )
 
-print '測試驗證 使用 "私鑰" 加密 "公鑰" 解密', c, p
+print '測試驗證 使用 "私鑰" 加密 "公鑰" 解密 ->'
+print '>> 輸入:', message, '由私鑰加密產生密文: ', c, '由密文用公鑰解密:', p
