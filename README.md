@@ -3,6 +3,7 @@
 - 必看 Ref: https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29
 - Ref: https://zh.wikipedia.org/wiki/RSA%E5%8A%A0%E5%AF%86%E6%BC%94%E7%AE%97%E6%B3%95
 - Ref: https://pythonhosted.org/pycrypto/
+- 關於 Mod 公式轉換 Ref: https://zh.wikipedia.org/wiki/%E6%A8%A1%E5%8F%8D%E5%85%83%E7%B4%A0
 
 ```
 Encrypt formula: c = (n^e) mod n
